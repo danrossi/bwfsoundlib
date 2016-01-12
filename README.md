@@ -15,3 +15,13 @@ Please follow the guide on [PySoundFile](https://github.com/bastibe/PySoundFile)
 [libsndfile](http://www.mega-nerd.com/libsndfile/) can be downloaded with compiling instructions.
 
 [libsndfile binaries](https://github.com/bastibe/libsndfile-binaries) for OSX and Windows may be updated in the future for libsndfile version 1.0.26.
+
+Example
+-------
+
+file = BwfSoundFile("/path/to/file.wav", "r")
+file.read_metadata()
+
+print (file.ixml_info)
+print (file.bext_info)
+print (file.get_core_info())
