@@ -19,9 +19,11 @@ Please follow the guide on [PySoundFile](https://github.com/bastibe/PySoundFile)
 Example
 -------
 
+```
 file = BwfSoundFile("/path/to/file.wav", "r")
 file.read_metadata()
 
 print (file.ixml_info)
 print (file.bext_info)
 print (file.get_core_info())
+```
